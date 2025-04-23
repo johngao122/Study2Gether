@@ -1,6 +1,6 @@
-# Study2Gether ![License](https://img.shields.io/badge/license-MIT-blue) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)
+# Study2Gather ![License](https://img.shields.io/badge/license-MIT-blue) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)
 
-Study2Gether works on all PC browsers (mobile browsers may be problematic)
+Study2Gather works on all PC browsers (mobile browsers may be problematic)
 
 ## Built with
 

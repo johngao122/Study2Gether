@@ -1,6 +1,6 @@
 # Getting Started with Vite
 
-Study2Gether's client side was bootstrapped with [Vite](https://vitejs.dev/).
+Study2Gather's client side was bootstrapped with [Vite](https://vitejs.dev/).
 
 ## Available Scripts
 
