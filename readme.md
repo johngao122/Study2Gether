@@ -1,15 +1,6 @@
-# SkyOffice ![License](https://img.shields.io/badge/license-MIT-blue) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)
+# Study2Gether ![License](https://img.shields.io/badge/license-MIT-blue) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)
 
-<img alt="Logo" align="right" src="https://user-images.githubusercontent.com/11501902/139942585-a6b044ce-3695-460a-91bd-dd9f1d4611c8.png" width="20%" />
-
-An immersive virtual office - Winner of [2021 Monte Jade Innovation Competition](https://www.montejadese.org/innovation-competition)
-
-- Come try it out - [Official Website](https://sky-office.co/)
-- Why we built this - [Concept Video](https://www.youtube.com/watch?v=BpDqGTPh8pc)
-- 🙌 Get latest updates? Follow our [Twitter](https://twitter.com/SkyOfficeApp).
-- 💕 Love this project? Consider [buy me a coffee](https://www.buymeacoffee.com/skyoffice).
-
-SkyOffice works on all PC browsers (mobile browsers are currently not supported)
+Study2Gether works on all PC browsers (mobile browsers may be problematic)
 
 ## Built with
 
@@ -26,7 +17,7 @@ SkyOffice works on all PC browsers (mobile browsers are currently not supported)
 - [Multifunctional Rooms](#multifunctional-rooms)
 - [Text Message Chat](#text-message-chat-with-real-time-dialog-bubbles)
 - [Custom/Private Rooms](#customprivate-rooms)
-- [Embedded Whiteboards](#embedded-whiteboards) (iframe embed of [WBO](https://github.com/lovasoa/whitebophir))
+- [Embedded Whiteboards](#embedded-whiteboards) (iframe embed of [Excalidraw](https://excalidraw.com/))
 
 ### Proximity Chat (distance-based interactive system)
 
@@ -69,26 +60,26 @@ You'll need [Node.js](https://nodejs.org/en/), [npm](https://www.npmjs.com/) ins
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/kevinshen56714/SkyOffice.git
+git clone https://github.com/johngao122/Study2Gether.git
 ```
 
-This will create a folder named `SkyOffice`. You can specify a different folder name like this:
+This will create a folder named `Study2Gether`. You can specify a different folder name like this:
 
 ```bash
-git clone https://github.com/kevinshen56714/SkyOffice.git my-folder-name
+git clone https://github.com/johngao122/Study2Gether.git my-folder-name
 ```
 
 To start a server, go into the project folder and install dependencies/run start command:
 
 ```bash
-cd SkyOffice or 'my-folder-name'
+cd Study2Gether or 'my-folder-name'
 yarn && yarn start
 ```
 
 To start a client, go into the client folder and install dependencies/run start command:
 
 ```bash
-cd SkyOffice/client or 'my-folder-name/client'
+cd Study2Gether/client or 'my-folder-name/client'
 yarn && yarn dev
 ```
 
@@ -98,10 +89,10 @@ Big thanks to this great repo - [ourcade/phaser3-typescript-parcel-template](htt
 
 Big thanks to pixel artist - [LimeZu](https://limezu.itch.io/)
 
-Big thanks to open-source whiteboard project - [WBO](https://github.com/lovasoa/whitebophir)
+Big thanks to [Excalidraw](https://excalidraw.com/) for providing the whiteboard feature
+
+Big thanks to [Kevin Shen](https://github.com/kevinshen56714) for the initial fork of the project
 
 ## License
 
 This project is licensed under MIT.
-
-If you're using SkyOffice to power your virtual office or using our code in other projects, please consider [buy me a coffee](https://www.buymeacoffee.com/skyoffice). Thank you :)

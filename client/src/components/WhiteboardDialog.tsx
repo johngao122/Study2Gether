@@ -14,9 +14,8 @@ const Backdrop = styled.div`
   height: 100vh;
   overflow: hidden;
   padding: 16px 180px 16px 16px;
-  width: 100%;
-  height: 100%;
 `
+
 const Wrapper = styled.div`
   width: 100%;
   height: 100%;
@@ -27,25 +26,25 @@ const Wrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: max-content;
 
   .close {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 16px;
+    right: 16px;
+    z-index: 1;
   }
 `
 
 const WhiteboardWrapper = styled.div`
   flex: 1;
-  border-radius: 25px;
+  border-radius: 16px;
   overflow: hidden;
-  margin-right: 25px;
+  background: #fff;
 
   iframe {
     width: 100%;
     height: 100%;
-    background: #fff;
+    border: 0;
   }
 `
 
@@ -60,12 +59,13 @@ export default function WhiteboardDialog() {
           aria-label="close dialog"
           className="close"
           onClick={() => dispatch(closeWhiteboardDialog())}
+          size="large"
         >
           <CloseIcon />
         </IconButton>
         {whiteboardUrl && (
           <WhiteboardWrapper>
-            <iframe title="white board" src={whiteboardUrl} />
+            <iframe title="whiteboard" src={whiteboardUrl} allow="fullscreen" loading="lazy" />
           </WhiteboardWrapper>
         )}
       </Wrapper>

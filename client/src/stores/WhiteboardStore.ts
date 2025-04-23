@@ -17,6 +17,16 @@ const initialState: WhiteboardState = {
   urls: new Map(),
 }
 
+// Excalidraw encryption key generator
+const generateEncryptionKey = () => {
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_'
+  let result = ''
+  for (let i = 0; i < 22; i++) {
+    result += chars.charAt(Math.floor(Math.random() * chars.length))
+  }
+  return result
+}
+
 export const whiteboardSlice = createSlice({
   name: 'whiteboard',
   initialState,
@@ -38,9 +48,11 @@ export const whiteboardSlice = createSlice({
       state.whiteboardUrl = null
     },
     setWhiteboardUrls: (state, action: PayloadAction<{ whiteboardId: string; roomId: string }>) => {
+      const excalidrawRoomId = Math.random().toString(36).substring(2, 15)
+      const encryptionKey = generateEncryptionKey()
       state.urls.set(
         action.payload.whiteboardId,
-        `https://wbo.ophir.dev/boards/sky-office-${action.payload.roomId}`
+        `https://excalidraw.com/#room=${excalidrawRoomId},${encryptionKey}`
       )
     },
   },
